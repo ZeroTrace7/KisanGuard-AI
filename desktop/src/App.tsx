@@ -18,18 +18,22 @@ export default function App() {
       >
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
           <span style={{ fontSize: 22 }}>🌾</span>
-          <strong style={{ fontSize: 18 }}>AgriGuard Desktop</strong>
+          <strong style={{ fontSize: 18 }}>KisanGuard AI — Agricultural Intelligence Station</strong>
         </div>
-        <label style={{ fontSize: 13 }}>
-          API&nbsp;
+        <label style={{ fontSize: 13, display: "flex", alignItems: "center", gap: 8 }}>
+          <span>API Endpoint:</span>
           <input
             value={apiBase}
+            placeholder="http://localhost:8000"
             onChange={(e) => setApiBase(e.target.value)}
             style={{
-              padding: "4px 8px",
+              padding: "5px 10px",
               borderRadius: 4,
-              border: "none",
+              border: "1px solid rgba(255, 255, 255, 0.4)",
+              background: "rgba(255, 255, 255, 0.15)",
+              color: "white",
               width: 220,
+              fontSize: 13,
             }}
           />
         </label>
