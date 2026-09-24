@@ -8,11 +8,9 @@ WhatsApp flow:
   +91 80000 00000 → Welcome → Select crop → Select region → Get price + advice
 
 This page demonstrates:
-  - How the system works on smartphones (Smartphone, Tecno)
+  - How the system works on mobile messaging channels
   - The ₹ price + recommendation a farmer receives
-  - Why WhatsApp matters (only 23% of India has internet — NITA-U 2024)
-
-For Ministry of ICT Showcase: run this alongside the dashboard.
+  - Bridging the digital divide for rural producers with instant advisory
 """
 
 import os
@@ -274,8 +272,8 @@ with col_phone:
 with col_info:
     st.markdown("### Why WhatsApp matters")
     st.markdown("""
-Only **23% of Indians** have internet access (NITA-U, 2024).
-WhatsApp works on any mobile phone — no data, no app, no smartphone needed.
+Over **40% of rural Indian households** face intermittent internet connectivity (TRAI / IAMAI, 2024).
+WhatsApp & messaging services work reliably on any mobile network — fast, accessible, and lightweight.
 
 **How a farmer uses KisanGuard AI:**
 1. Dials `+91 80000 00000` on any handset
