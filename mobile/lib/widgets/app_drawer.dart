@@ -123,18 +123,18 @@ class _AppDrawerState extends State<AppDrawer> {
             const Divider(height: 1),
             ListTile(
               leading: const Icon(Icons.eco_outlined),
-              title: const Text('About AgriGuard'),
+              title: const Text('About KisanGuard AI'),
               onTap: () {
                 Navigator.of(context).pop();
                 showAboutDialog(
                   context: context,
-                  applicationName: 'AgriGuard',
+                  applicationName: 'KisanGuard AI',
                   applicationVersion: '0.1.0',
                   applicationIcon: const Icon(Icons.eco, color: AppColors.primary),
                   children: const [
                     Text(
                       'Crop price forecasts and market intelligence for '
-                      'Ugandan farmers and traders.',
+                      'Indian farmers and traders.',
                     ),
                   ],
                 );
@@ -142,7 +142,7 @@ class _AppDrawerState extends State<AppDrawer> {
             ),
             ListTile(
               leading: const Icon(Icons.share_outlined),
-              title: const Text('Share AgriGuard'),
+              title: const Text('Share KisanGuard AI'),
               onTap: () => Navigator.of(context).pop(),
             ),
             ListTile(
