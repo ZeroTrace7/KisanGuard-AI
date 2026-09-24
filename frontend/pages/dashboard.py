@@ -34,7 +34,7 @@ from errors import humanize_response_error, humanize_exception
 # CONFIG
 # ─────────────────────────────────────────────
 st.set_page_config(
-    page_title="AgriGuard Dashboard",
+    page_title="KisanGuard AI Dashboard",
     page_icon="🌾",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -272,9 +272,9 @@ def weather_row_style(row):
 st.sidebar.markdown(
     """
     <div style="text-align:center; padding:10px 0 4px;">
-        <span style="font-size:1.4rem; font-weight:700; color:#00cc66;">🌾 AgriGuard</span><br>
+        <span style="font-size:1.4rem; font-weight:700; color:#00cc66;">🌾 KisanGuard AI</span><br>
         <span style="font-size:0.72rem; color:#7a8a7a; letter-spacing:.12em; text-transform:uppercase;">
-            Agricultural Intelligence · Uganda
+            Agricultural Intelligence · India
         </span>
     </div>
     """,
@@ -328,7 +328,7 @@ with st.sidebar.expander("🔄 Price data sync", expanded=False):
     else:
         st.caption("Not yet synced from HDX in this environment — using bundled/initial data.")
     if st.button("Check for updates now", use_container_width=True, key="wfp_sync_btn"):
-        with st.spinner("Checking HDX for a newer Uganda food-price dataset…"):
+        with st.spinner("Checking for newer food-price datasets…"):
             sync_result, sync_err = api("POST", "/forecasts/sync", base_url)
         if sync_result:
             st.success(sync_result["detail"]) if sync_result["updated"] else st.info(sync_result["detail"])
@@ -345,7 +345,7 @@ with st.sidebar.expander("🔄 Price data sync", expanded=False):
     else:
         st.caption("Not yet synced in this environment — forecasts are WFP-only until the first sync.")
     if st.button("Check for updates now", use_container_width=True, key="fews_net_sync_btn"):
-        with st.spinner("Checking FEWS NET (FDW) for fresher Uganda market prices…"):
+        with st.spinner("Checking FEWS NET (FDW) for fresher market prices…"):
             fews_result, fews_err = api("POST", "/forecasts/sync/fews-net", base_url)
         if fews_result:
             st.success(f"Synced — {fews_result.get('row_count', 0)} observations through {fews_result.get('max_date', '—')}")
@@ -396,15 +396,15 @@ crop    = st.sidebar.selectbox("🌽 Crop",   available_crops)
 market  = st.sidebar.selectbox("📍 Market", available_markets)
 horizon = st.sidebar.slider("📅 Forecast Horizon (days)", 7, 90, 14, step=7)
 
-st.sidebar.caption("KisanGuard AI • Built by Shourya Pratap & ZeroTrace7\nHack The Weather 2026")
+st.sidebar.caption("KisanGuard AI • Built by Shourya Pratap & ZeroTrace7, 2026")
 
 # ─────────────────────────────────────────────
 # HEADER
 # ─────────────────────────────────────────────
 st.markdown("""
-<h1 style='color:#00cc66; margin-bottom:0;'>🌾 AgriGuard</h1>
+<h1 style='color:#00cc66; margin-bottom:0;'>🌾 KisanGuard AI</h1>
 <p style='color:#888; margin-top:4px; font-size:1.05rem;'>
-  Agricultural Intelligence Dashboard · Uganda
+  Agricultural Intelligence Dashboard · India
 </p>
 """, unsafe_allow_html=True)
 
