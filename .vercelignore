@@ -1,0 +1,18 @@
+# Ignore Python manifests so Vercel doesn't trigger serverless uv pip install
+requirements.txt
+pyproject.toml
+pytest.ini
+backend/
+ml/
+data/
+scripts/
+notebooks/
+mobile/
+archive/
+venv/
+.venv/
+__pycache__/
+*.py
+*.pkl
+*.joblib
+*.csv
