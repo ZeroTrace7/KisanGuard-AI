@@ -1,11 +1,15 @@
 # 🌾 KisanGuard AI: Intelligent Agricultural Forecasting & Decision Support System
 
+[![Vercel Live Demo](https://img.shields.io/badge/Vercel-Live%20Demo-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://kisanguard-ai.vercel.app/)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fshourya2101%2FKisanGuard-AI)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-shourya2101%2FKisanGuard--AI-181717?style=for-the-badge&logo=github)](https://github.com/shourya2101/KisanGuard-AI)
 [![FastAPI](https://img.shields.io/badge/Backend-FastAPI%20Async-009688?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com/)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python)](https://python.org/)
-[![Streamlit](https://img.shields.io/badge/Frontend-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit)](https://streamlit.io/)
-[![Flutter](https://img.shields.io/badge/Mobile-Flutter%20Offline--First-02569B?style=for-the-badge&logo=flutter)](https://flutter.dev/)
-[![Tauri 2.0](https://img.shields.io/badge/Desktop-Tauri%20v2%20React-FFC135?style=for-the-badge&logo=tauri)](https://v2.tauri.app/)
+[![Vite + React](https://img.shields.io/badge/Web%20Portal-Vite%20%2B%20React%2018-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://kisanguard-ai.vercel.app/)
 [![License: AGPL-3.0](https://img.shields.io/badge/License-AGPL--3.0-lightgrey?style=for-the-badge)](LICENSE)
+
+> 🚀 **Live Production Deployment**: **[https://kisanguard-ai.vercel.app](https://kisanguard-ai.vercel.app/)**  
+> *Experience the live interactive KisanGuard decision, market price forecasting, and climate intelligence station directly in your browser.*
 
 ---
 
@@ -117,6 +121,22 @@ AgriGuard/
 ├── run.sh                    # Native execution launcher
 └── pyproject.toml            # Python packaging and dependencies
 ```
+
+---
+
+## 🌐 Live Cloud Deployment (Vercel)
+
+The KisanGuard AI interactive web portal is deployed live on Vercel:
+
+* **Live Demo URL:** **[https://kisanguard-ai.vercel.app](https://kisanguard-ai.vercel.app/)**
+
+### 1-Click Deploy to Vercel
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fshourya2101%2FKisanGuard-AI)
+
+1. Click the **Deploy with Vercel** button above (or import `shourya2101/KisanGuard-AI` directly in your [Vercel Dashboard](https://vercel.com/new)).
+2. Vercel automatically detects the root `package.json` and `vercel.json`.
+3. Click **Deploy** — your live cloud portal is built and deployed automatically with zero manual configuration.
 
 ---
 
