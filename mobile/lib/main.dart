@@ -28,19 +28,19 @@ void main() {
   // straight to the generic bundled snapshot. No-ops quickly if offline —
   // see SyncService.isOnline.
   unawaited(_prefetchWatchlist());
-  runApp(const AgriGuardApp());
+  runApp(const KisanGuardApp());
 }
 
 Future<void> _prefetchWatchlist() async {
   final watchlist = await PreferencesService.getWatchlist();
   if (watchlist.isEmpty) return;
-  final market = await PreferencesService.getPreferredMarket() ?? 'Kampala';
+  final market = await PreferencesService.getPreferredMarket() ?? 'Azadpur';
   final sync = SyncService(api: ApiService(), cache: LocalCache());
   await sync.prefetch(watchlist.map((c) => (c, market)).toList());
 }
 
-class AgriGuardApp extends StatelessWidget {
-  const AgriGuardApp({super.key});
+class KisanGuardApp extends StatelessWidget {
+  const KisanGuardApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -52,7 +52,7 @@ class AgriGuardApp extends StatelessWidget {
         ),
       ],
       child: MaterialApp(
-        title: 'AgriGuard',
+        title: 'KisanGuard AI',
         debugShowCheckedModeBanner: false,
         theme: AppTheme.light,
         home: const HomeShell(),
