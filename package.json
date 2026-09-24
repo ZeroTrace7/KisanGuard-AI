@@ -4,8 +4,8 @@
   "private": true,
   "description": "KisanGuard AI — Agricultural Intelligence & Price Forecasting Platform",
   "scripts": {
-    "build": "npm --prefix desktop install && npm --prefix desktop run build",
-    "dev": "npm --prefix desktop run dev",
-    "preview": "npm --prefix desktop run preview"
+    "build": "cd desktop && npm install && npm run build",
+    "dev": "cd desktop && npm run dev",
+    "preview": "cd desktop && npm run preview"
   }
 }
