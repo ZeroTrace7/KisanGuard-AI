@@ -1,6 +1,6 @@
-# AgriGuard Mobile (Flutter)
+# KisanGuard AI Mobile (Flutter)
 
-Cross-platform client for Ugandan farmers: crop price forecasts, market intelligence, weather/climate risk, and price alerts.
+Cross-platform client for Indian farmers: crop price forecasts, market intelligence, weather/climate risk, and price alerts.
 
 ## Features
 
