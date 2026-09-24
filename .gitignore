@@ -58,3 +58,5 @@ Thumbs.db
 *.sqlite
 agriguard_dev.db
 backend/.env
+node_modules/
+.vercel/

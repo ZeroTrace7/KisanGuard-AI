@@ -36,8 +36,8 @@ class Settings:
 
     # data / models
     price_data_path: str = os.getenv(
-        "AGRIGUARD_PRICE_DATA",
-        str(ROOT / "data" / "raw" / "agmarknet_prices_india.csv"),
+        "KISANGUARD_PRICE_DATA",
+        os.getenv("AGRIGUARD_PRICE_DATA", str(ROOT / "data" / "raw" / "agmarknet_prices_india.csv")),
     )
     model_dir: str = os.getenv("MODEL_DIR", str(ROOT / "ml" / "models"))
 
@@ -49,8 +49,8 @@ class Settings:
     # blended on top of WFP (see backend/app/services/fews_net_sync.py). WFP
     # remains the historical backbone; FEWS NET fills in more recent months.
     fews_net_data_path: str = os.getenv(
-        "AGRIGUARD_FEWS_NET_DATA",
-        str(ROOT / "data" / "raw" / "fews_net_prices_uga.csv"),
+        "KISANGUARD_FEWS_NET_DATA",
+        os.getenv("AGRIGUARD_FEWS_NET_DATA", str(ROOT / "data" / "raw" / "fews_net_prices_uga.csv")),
     )
     fews_net_sync_enabled: bool = os.getenv("FEWS_NET_SYNC_ENABLED", "true").lower() == "true"
     fews_net_sync_interval_hours: float = float(os.getenv("FEWS_NET_SYNC_INTERVAL_HOURS", "6"))

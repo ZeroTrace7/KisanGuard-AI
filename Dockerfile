@@ -17,5 +17,4 @@ COPY . .
 # Expose ports
 EXPOSE 8501 8000
 
-# Default command (will be overridden in docker-compose)
-CMD ["streamlit", "run", "frontend/dashboard.py", "--server.port=8501", "--server.address=0.0.0.0"]
+CMD ["streamlit", "run", "frontend/Home.py", "--server.port=8501", "--server.address=0.0.0.0"]

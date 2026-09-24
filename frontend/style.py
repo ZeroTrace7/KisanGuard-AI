@@ -1,6 +1,6 @@
 """
-frontend/style.py — Shared AgriGuard branding
-================================================
+frontend/style.py — Shared KisanGuard AI branding
+=================================================
 Every page previously carried its own copy-pasted <style> block (or none
 at all — price_forecast.py and ussd_simulator.py had no branding, so they
 rendered as bare default Streamlit: red primary buttons, the Streamlit

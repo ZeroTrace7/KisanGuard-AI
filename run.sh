@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-# AgriGuard Easy Runner - No repeated pip installs! No Docker!
+# KisanGuard AI Runner - No repeated pip installs! No Docker!
 
 set -e
 
-echo "🚀 AgriGuard Launcher (native, no Docker)"
+echo "🚀 KisanGuard AI Launcher (native, no Docker)"
 
 # Prefer Python 3.12/3.13 because the pinned scientific packages have
 # compatible wheels there. On Python 3.14, scikit-learn 1.5.0 falls back to a

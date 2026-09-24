@@ -21,8 +21,9 @@ log = logging.getLogger(__name__)
 ROOT      = Path(__file__).resolve().parents[2]
 MODEL_DIR = Path(os.getenv("MODEL_DIR", str(ROOT / "ml" / "models")))
 DATA_FILE = Path(
-    os.getenv("AGRIGUARD_PRICE_DATA",
-              str(ROOT / "data" / "raw" / "agmarknet_prices_india.csv"))
+    os.getenv("KISANGUARD_PRICE_DATA",
+              os.getenv("AGRIGUARD_PRICE_DATA",
+                        str(ROOT / "data" / "raw" / "agmarknet_prices_india.csv")))
 )
 
 

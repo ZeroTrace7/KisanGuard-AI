@@ -1,7 +1,7 @@
 {
-  "name": "@agriguard/api-client",
+  "name": "@kisanguard/api-client",
   "version": "0.1.0",
-  "description": "Shared TypeScript client for the AgriGuard FastAPI backend",
+  "description": "Shared TypeScript client for the KisanGuard AI FastAPI backend",
   "main": "dist/src/client.js",
   "types": "dist/src/client.d.ts",
   "scripts": {
@@ -21,7 +21,7 @@
   "license": "AGPL-3.0-or-later",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Agri-Guard/AgriGuard.git",
+    "url": "https://github.com/shourya2101/KisanGuard-AI.git",
     "directory": "shared/api-client"
   }
 }

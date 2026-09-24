@@ -73,14 +73,16 @@ dev = [
     "ruff>=0.5",
     "mypy>=1.10",
 ]
-all = ["agriguard[ml,db,dev]"]
+all = ["kisanguard[ml,db,dev]"]
 
 [project.urls]
-Homepage = "https://github.com/Agri-Guard/AgriGuard"
-Repository = "https://github.com/Agri-Guard/AgriGuard"
-Issues = "https://github.com/Agri-Guard/AgriGuard/issues"
+Homepage = "https://github.com/shourya2101/KisanGuard-AI"
+Repository = "https://github.com/shourya2101/KisanGuard-AI"
+Issues = "https://github.com/shourya2101/KisanGuard-AI/issues"
 
 [project.scripts]
+kisanguard-train = "scripts.train_models:main"
+kisanguard-validate = "scripts.validate_data:main"
 agriguard-train = "scripts.train_models:main"
 agriguard-validate = "scripts.validate_data:main"
 

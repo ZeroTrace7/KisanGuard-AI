@@ -1,5 +1,5 @@
 """
-AgriGuard MVP FastAPI Entry Point
+KisanGuard AI FastAPI Entry Point
 ==================================
 
 Purpose:

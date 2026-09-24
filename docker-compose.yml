@@ -1,7 +1,7 @@
 version: "3.9"
 
 # ─────────────────────────────────────────────────────────────────────────────
-# AgriGuard docker-compose
+# KisanGuard AI docker-compose
 # ─────────────────────────────────────────────────────────────────────────────
 # Quick start:
 #   cp config/.env.example config/.env   # fill in your values
@@ -15,7 +15,8 @@ version: "3.9"
 x-common-env: &common-env
   APP_ENV: ${APP_ENV:-development}
   DEBUG: ${DEBUG:-false}
-  AGRIGUARD_PRICE_DATA: /app/data/raw/agmarknet_prices_india.csv
+  KISANGUARD_PRICE_DATA: ${KISANGUARD_PRICE_DATA:-/app/data/raw/agmarknet_prices_india.csv}
+  AGRIGUARD_PRICE_DATA: ${AGRIGUARD_PRICE_DATA:-/app/data/raw/agmarknet_prices_india.csv}
   MODEL_DIR: /app/ml/models
 
 services:

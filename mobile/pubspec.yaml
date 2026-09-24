@@ -1,5 +1,5 @@
-name: agriguard_mobile
-description: AgriGuard mobile client — crop price forecasts, market intelligence & alerts for Ugandan farmers.
+name: kisanguard_mobile
+description: KisanGuard AI mobile client — crop price forecasts, market intelligence & alerts for Indian farmers.
 publish_to: "none"
 version: 0.1.0+1
 

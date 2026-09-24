@@ -1,8 +1,8 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "AgriGuard",
+  "productName": "KisanGuard AI",
   "version": "0.1.0",
-  "identifier": "com.agriguard.desktop",
+  "identifier": "com.kisanguard.desktop",
   "build": {
     "beforeDevCommand": "npm run dev",
     "devUrl": "http://localhost:1420",
@@ -12,7 +12,7 @@
   "app": {
     "windows": [
       {
-        "title": "AgriGuard — Agricultural Intelligence",
+        "title": "KisanGuard AI — Agricultural Intelligence",
         "width": 1100,
         "height": 720,
         "resizable": true,
