@@ -128,7 +128,7 @@ AgriGuard/
 
 The KisanGuard AI interactive web portal is deployed live on Vercel:
 
-* **Live Demo URL:** **[https://kisanguard-ai.vercel.app](https://kisanguard-ai.vercel.app/)**
+* **Live Demo URL:** **[https://kisanguard-live.vercel.app/](https://kisanguard-live.vercel.app/)**
 
 ### 1-Click Deploy to Vercel
 
